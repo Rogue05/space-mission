@@ -17,4 +17,4 @@ private:
     virtual void onUpdate(float dt) override{
         rotate(dt*m_angular_velocity);
     }
-}
+};
