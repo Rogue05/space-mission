@@ -3,8 +3,8 @@
 
 #include <AstronomicalObject.hpp>
 
-AstronomicalObject planet,moon;
-
+AstronomicalObject planet;
+AstronomicalObject moon;
 
 int main()
 {
