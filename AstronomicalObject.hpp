@@ -9,7 +9,7 @@ public:
     }
 
     void set_orbit(sf::Vector2f orbit){
-        pos(orbit);
+        move(orbit);
     }
 
 private:
