@@ -24,7 +24,7 @@ private:
         // target.draw(*((sf::Sprite*)(this)), transform);
     }
 
-    virtual void onUpdate(dt) override{
+    virtual void onUpdate(float dt) override{
         // Not defined
     }
 

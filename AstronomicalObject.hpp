@@ -9,7 +9,7 @@ public:
     }
 private:
     float m_angular_velocity;
-    virtual void onUpdate(dt) override{
+    virtual void onUpdate(float dt) override{
         rotate(dt*m_angular_velocity);
     }
 }
