@@ -17,7 +17,8 @@ int main()
     moon.set_radius(10.0);
     moon.set_color(sf::Color(250, 100, 50));
     moon.set_orbit(sf::Vector2f(20.0,0.0));
-    planet.add_child(moon);
+    moon.set_angular_velocity(1.0);
+    planet.add_child(&moon);
 
     //sf::CircleShape shape(50.f);
     // set the shape color to green
@@ -31,9 +32,10 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
         }
+        planet.update(0.01);
         window.clear();
         //window.draw(shape);
-        mynode.draw(window,sf::Transform::Identity);
+        planet.draw(window,sf::Transform::Identity);
         window.display();
     }
     return EXIT_SUCCESS;
