@@ -16,7 +16,7 @@ int main()
 
     moon.set_radius(10.0);
     moon.set_color(sf::Color(250, 100, 50));
-    moon.set_orbit(sf::Vector2f(20.0,0.0));
+    moon.set_orbit(sf::Vector2f(150.0,0.0));
     moon.set_angular_velocity(1.0);
     planet.add_child(&moon);
 
@@ -32,7 +32,7 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-        planet.update(0.03);
+        planet.update(0.1);
         window.clear();
         //window.draw(shape);
         planet.draw(window,sf::Transform::Identity);
