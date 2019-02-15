@@ -16,7 +16,7 @@ int main()
 
     moon.set_radius(10.0);
     moon.set_color(sf::Color(250, 100, 50));
-    moon.set_orbit(sf::Vector2f(150.0,0.0));
+    moon.set_orbit(sf::Vector2f(100.0,0.0));
     moon.set_angular_velocity(1.0);
     planet.add_child(&moon);
 
