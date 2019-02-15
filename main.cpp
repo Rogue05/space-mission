@@ -10,7 +10,7 @@ int main()
 {
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
     
-    planet.move(sf::Vector2f(100,100));
+    // planet.move(sf::Vector2f(100,100));
     planet.set_radius(50.0);
     planet.set_color(sf::Color(100, 250, 50));
 
