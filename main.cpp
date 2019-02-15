@@ -1,7 +1,7 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 
-#include <Node.hpp>
+#include <CircleShapeNode.hpp>
 
 CircleShapeNode mynode;
 
