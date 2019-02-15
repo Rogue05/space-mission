@@ -10,7 +10,7 @@ int main()
 {
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
     
-    planet.pos(sf::Vector2f(100,100));
+    planet.move(sf::Vector2f(100,100));
     planet.set_radius(50.0);
     planet.set_color(sf::Color(100, 250, 50));
 
@@ -32,7 +32,7 @@ int main()
             if (event.type == sf::Event::Closed)
                 window.close();
         }
-        planet.update(0.01);
+        planet.update(0.03);
         window.clear();
         //window.draw(shape);
         planet.draw(window,sf::Transform::Identity);

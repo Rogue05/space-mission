@@ -15,7 +15,7 @@ public:
         m_transform.scale(scale,scale);
     }
 
-    void pos(sf::Vector2f pos){
+    void move(sf::Vector2f pos){
         m_transform.translate(pos);
     }
 
