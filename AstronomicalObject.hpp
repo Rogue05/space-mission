@@ -7,6 +7,11 @@ public:
     void set_angular_velocity(float vel){
         m_angular_velocity = vel;
     }
+
+    void set_orbit(sf::Vector2f orbit){
+        pos(orbit);
+    }
+
 private:
     float m_angular_velocity;
     virtual void onUpdate(float dt) override{

@@ -15,7 +15,15 @@ public:
         m_transform.scale(scale,scale);
     }
 
+    void pos(sf::Vector2f pos){
+        m_transform.translate(pos);
+    }
+
     // ... functions to manage the node's children
+
+    void add_child(Node * new_node){
+        m_children.insert(new_node);
+    }
 
     void update(float dt){
         onUpdate(dt);
