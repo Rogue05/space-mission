@@ -9,7 +9,7 @@ public:
     // .. functions to define the sprite
     void set_radius(float radius){
         m_circle = sf::CircleShape(radius);
-        move(sf::Vector2f(-radius/2,-radius/2))
+        move(sf::Vector2f(-radius/2,-radius/2));
         // m_circle.setFillColor(sf::Color(100, 250, 50));
     }
 
