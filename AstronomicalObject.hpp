@@ -8,8 +8,8 @@ public:
         m_angular_velocity = vel;
     }
 
-    void set_orbit(sf::Vector2f orbit){
-        move(orbit);
+    void set_orbit(float orbit){
+        move(sf::Vector2f(orbit,orbit));
     }
 
 private:

@@ -5,6 +5,7 @@
 
 AstronomicalObject planet;
 AstronomicalObject moon;
+AstronomicalObject moon_axis;
 
 int main()
 {
@@ -16,9 +17,12 @@ int main()
 
     moon.set_radius(10.0);
     moon.set_color(sf::Color(250, 100, 50));
-    moon.set_orbit(sf::Vector2f(100.0,0.0));
-    moon.set_angular_velocity(1.0);
-    planet.add_child(&moon);
+    moon.move(sf::Vector2f(100.0,0.0));
+    moon_axis.set_angular_velocity(1.0);
+    moon_axis.add_child(&moon);
+    moon_axis.set_radius(10.0);
+    moon_axis.set_color(sf::Color(100, 0, 0));
+    planet.add_child(&moon_axis);
 
     //sf::CircleShape shape(50.f);
     // set the shape color to green
